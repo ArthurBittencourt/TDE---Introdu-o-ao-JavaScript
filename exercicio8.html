@@ -1,0 +1,28 @@
+<!--Crie um script que leia três notas e imprima a média das notas e informe se o aluno está aprovado ou não. A média para aprovação é 6.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1 = Number(prompt("digite a 1 nota"))
+        let nota2 = Number(prompt("digite a 2 nota"))
+        let nota3 = Number(prompt("digite a 3 nota"))
+
+        let avaliacoes = 3
+
+        let reprovado = "aluno reprovado"
+        let aprovado = "aluno aprovado"
+
+        let media = (nota1 + nota2 + nota3) / avaliacoes
+        if (media < 6){
+            alert("nota: " + media + reprovado)
+        }else{
+            alert("nota: " + media +" "+ aprovado)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--10 - Faça um script que leia números até que seja digitado um número negativo, ao final mostrar a média dos números digitados.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0
+        let quant = 0
+
+        let num = Number(prompt("Digite um numero"))
+
+        while (num >= 0){
+            soma = soma + num
+            quant ++
+
+            num = Number(prompt("Digite outro numero"))
+        }
+
+        let med = soma / quant
+        alert("A media e: " + med)
+    </script>
+</body>
+</html>

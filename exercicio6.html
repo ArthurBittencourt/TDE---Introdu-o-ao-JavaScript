@@ -1,0 +1,27 @@
+<!--  Faça um script que leia o nome e a idade de uma pessoa e informe se a pessoa é maior de idade ou não. Exemplo: ‘João você tem 30 anos, é maior de idade’.-->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio06</title>
+  </head>
+  <body>
+
+    <script>
+        let nome = prompt("digite seu nome")
+        let idade = prompt("digite sua idade")
+        let maiorIdade = "menor de idade"
+
+        if (idade >= 18){
+            maiorIdade = "maior de idade"
+        } else {
+            maiorIdade = "menor de idade"
+        }
+
+        let texto = nome + " voce tem " + idade + " anos, é " + maiorIdade
+
+        alert(texto)
+    </script>
+  </body>
+  </html>
